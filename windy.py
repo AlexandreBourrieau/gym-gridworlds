@@ -71,7 +71,7 @@ class WindyGridworldEnv(gym.Env):
         return self.position
 
     def render(self, mode='human'):
-        if self.ax is None:
+        if self.ax is None or not None:
             fig = plt.figure()
             self.ax = fig.gca()
 
